@@ -1,0 +1,24 @@
+{
+  "name": "tdmu-cloud-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tuan392/tdmu-cloud-lab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tuan392/tdmu-cloud-lab/issues"
+  },
+  "homepage": "https://github.com/Tuan392/tdmu-cloud-lab#readme",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}

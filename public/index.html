@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello Cloud - LING270</title>
+</head>
+<body>
+  <h1>Hello Cloud!</h1>
+  <p>Chào mừng đến với bài thực hành Điện toán đám mây.</p>
+  <button onclick="checkAPI()">Kiểm tra API</button>
+  <pre id="result"></pre>
+
+  <script>
+    async function checkAPI() {
+      const result = document.getElementById("result");
+
+      try {
+        const response = await fetch("/api");
+        const data = await response.json();
+        result.textContent = JSON.stringify(data, null, 2);
+      } catch (error) {
+        result.textContent = "Không thể kết nối API.";
+      }
+    }
+  </script>
+</body>
+</html>
